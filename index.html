@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warner Bros</title>
     <style>
-        /* CSS for header and navigation */
+        /* CSS for header */
         header {
             background-color: black;
             color: white;
@@ -14,57 +14,46 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
         }
 
         .logo {
             font-size: 24px;
             font-weight: bold;
         }
-          nav {
+
+        /* CSS for navigation */
+        nav {
             background-color: #808080;
             padding: 20px;
-            height: 100%;
             position: fixed;
             top: 0;
             left: 0;
             width: 250px;
             overflow-y: auto;
+            border-radius: 5px;
+            margin-top: 80px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 20px;
+            display: block;
+            margin-bottom: 20px;
         }
 
-        /* CSS for search bar */
-        .search-bar {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .search-input {
-            padding: 10px;
-            width: 300px;
-            border: 2px solid black;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-right: 10px;
-        }
-
-        .search-button {
-            padding: 10px 20px;
-            background-color: black;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+        /* CSS for content area */
+        .content {
+            margin-left: 250px; /* Adjust according to nav width */
+            padding: 20px;
+            padding-top: 80px; /* Adjust according to header height */
         }
 
         /* Optional: CSS for hover effects */
-        .search-button:hover {
-            background-color: #333333;
+        nav a:hover {
+            background-color: #606060;
         }
     </style>
 </head>
@@ -72,19 +61,23 @@
 <body>
     <header>
         <div class="logo">Warner Bros</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="movies.html">Movies</a>
-            <a href="tv_shows.html">TV Shows</a>
-            <a href="Games.html">Games</a>
-            <a href="Feedback.html">Feedback</a>
-            <a href="about us.html">About Us</a>
-        </nav>
     </header>
 
-    <div class="search-bar">
-        <input type="text" class="search-input" placeholder="Search for movies, TV shows, games...">
-        <button class="search-button">Search</button>
+    <nav>
+        <div class="nav-box">
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Games</a>
+            <a href="#">Feedback</a>
+            <a href="#">About Us</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Your content goes here -->
+        <h1>Welcome to Warner Bros</h1>
+        <p>This is the home page content.</p>
     </div>
 </body>
 
