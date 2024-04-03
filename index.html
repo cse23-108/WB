@@ -1,34 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Warner Bros.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros</title>
     <style>
-      
+        /* CSS for header and navigation */
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* CSS for search bar */
+        .search-bar {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .search-input {
+            padding: 10px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Optional: CSS for hover effects */
+        .search-button:hover {
+            background-color: #333333;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Welcome to Warner Bros.</h1>
+        <div class="logo">Warner Bros</div>
         <nav>
-            
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Games</a>
+            <a href="#">News</a>
+            <a href="#">About Us</a>
         </nav>
     </header>
-    <main>
-        <section id="now-playing">
-            <h2>Now Playing</h2>
-            <!-- Add your now playing movies here -->
-        </section>
-        <section id="upcoming-releases">
-            <h2>Upcoming Releases</h2>
-            <!-- Add your upcoming releases here -->
-        </section>
-        <section id="own-now">
-            <h2>Own Now</h2>
-            <!-- Add your 'Own Now' titles here -->
-        </section>
-    </main>
-    <footer>
-        <!-- Add your footer content here -->
-    </footer>
+
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search for movies, TV shows, games...">
+        <button class="search-button">Search</button>
+    </div>
 </body>
+
 </html>
+
+
+    
