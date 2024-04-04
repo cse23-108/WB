@@ -6,7 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warner Bros</title>
     <style>
-        /* Your CSS styles */
+        /* Resetting default margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #212121;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            width: 250px;
+            position: fixed;
+            top: 70px;
+            bottom: 0;
+            overflow-y: auto;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .nav-link {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Content styles */
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        /* Optional: Hover effect for links */
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
 
