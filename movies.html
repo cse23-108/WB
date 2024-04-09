@@ -4,42 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies - Warner Bros</title>
+    <title>Warner Bros - Movies</title>
     <style>
-        /* Your CSS styles */
+        /* Resetting default margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: #000000; /* Changed to black */
+            color: #ffffff;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        /* Header styles */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 20px; /* Added margin */
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Content styles */
+        .content {
+            padding: 20px;
+            text-align: center; /* Align content to center */
+        }
+
+        /* Movie styles */
+        .movie {
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+        }
+
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .movie-title {
+            margin-top: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="logo">Warner Bros</div>
+        <div class="logo">Warner Bros - Movies</div>
     </header>
-
-    <nav>
-        <div class="nav-link">
-            <a href="index.html">Home</a>
-        </div>
-        <div class="nav-link">
-            <a href="movies.html">Movies</a>
-        </div>
-        <div class="nav-link">
-            <a href="tvshows.html">TV Shows</a>
-        </div>
-        <div class="nav-link">
-            <a href="games.html">Games</a>
-        </div>
-        <div class="nav-link">
-            <a href="feedback.html">Feedback</a>
-        </div>
-        <div class="nav-link">
-            <a href="about.html">About Us</a>
-        </div>
-    </nav>
 
     <div class="content">
         <!-- Content of the Movies page -->
-        <h1>Movies</h1>
-        <p>This is the Movies page content.</p>
+        <div class="movie">
+            <img src="movie1.jpg" alt="Movie 1">
+            <div class="movie-title">Movie 1</div>
+        </div>
+        <div class="movie">
+            <img src="movie2.jpg" alt="Movie 2">
+            <div class="movie-title">Movie 2</div>
+        </div>
+        <!-- Add more movie items as needed -->
     </div>
 </body>
 
