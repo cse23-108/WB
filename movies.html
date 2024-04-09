@@ -39,46 +39,128 @@
 
         /* Content styles */
         .content {
+            position: relative;
             padding: 20px;
-            text-align: center; /* Align content to center */
+            text-align: center;
+        }
+
+        /* Movie container styles */
+        .movie-container {
+            display: flex;
+            overflow-x: hidden;
+            gap: 20px;
+            padding-bottom: 20px;
+            margin-left: -20px;
+            margin-right: -20px;
         }
 
         /* Movie styles */
         .movie {
-            display: inline-block;
             width: 200px;
-            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
         }
 
         .movie img {
             width: 100%;
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
         }
 
+        .movie:hover {
+            transform: scale(1.05);
+        }
+
         .movie-title {
-            margin-top: 10px;
+            margin-top: 15px;
             font-weight: bold;
+            line-height: 1.2;
+            white-space: nowrap; /* Prevent line breaks */
+            overflow: hidden; /* Hide overflow */
+            text-overflow: ellipsis; /* Show ellipsis for overflow text */
+        }
+
+        /* Arrow styles */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .left-arrow {
+            left: 20px;
+        }
+
+        .right-arrow {
+            right: 20px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="logo">Warner Bros - Movies</div>
+        <div class="logo"> Movies available now</div>
     </header>
 
     <div class="content">
         <!-- Content of the Movies page -->
-        <div class="movie">
-            <img src="movie1.jpg" alt="Movie 1">
-            <div class="movie-title">Movie 1</div>
+        <div class="movie-container" id="movieContainer">
+            <div class="movie">
+                <img src="https://4kwallpapers.com/images/walls/thumbs_3t/9306.jpg" alt="Movie 1">
+                <div class="movie-title">Movie 1: Some Random Movie Title Goes Here</div>
+            </div>
+            <div class="movie">
+                <img src="https://4kwallpapers.com/images/walls/thumbs/15998.jpg" alt="3 Body Problem">
+                <div class="movie-title">3 Body Problem: Another Movie Title Here</div>
+            </div>
+            <!-- Add more movie items as needed -->
         </div>
-        <div class="movie">
-            <img src="movie2.jpg" alt="Movie 2">
-            <div class="movie-title">Movie 2</div>
-        </div>
-        <!-- Add more movie items as needed -->
+        <div class="arrow left-arrow" onclick="scrollMovies('left')">&#10094;</div>
+        <div class="arrow right-arrow" onclick="scrollMovies('right')">&#10095;</div>
     </div>
+
+    <script>
+        function scrollMovies(direction) {
+            const movieContainer = document.getElementById('movieContainer');
+            const scrollAmount = 220; // Adjust as needed for movie width + gap
+            if (direction === 'left') {
+                movieContainer.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else if (direction === 'right') {
+                movieContainer.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Add more movie titles dynamically
+        const movieContainer = document.getElementById('movieContainer');
+        const addMoreMovies = () => {
+            for (let i = 0; i < 5; i++) { // Add 5 more movies
+                const movie = document.createElement('div');
+                movie.classList.add('movie');
+                movie.innerHTML = `
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/9306.jpg" alt="Movie">
+                    <div class="movie-title">Movie: Some Random Movie Title Goes Here</div>
+                `;
+                movieContainer.appendChild(movie);
+            }
+        }
+
+        // Call function to add more movies when the page loads
+        window.addEventListener('load', addMoreMovies);
+    </script>
 </body>
 
 </html>
