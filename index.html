@@ -47,6 +47,8 @@
             bottom: 0;
             overflow-y: auto;
             border-radius: 0 10px 10px 0;
+            transition: transform 0.3s ease; /* Added transition */
+            transform: translateX(-250px); /* Hide navigation by default */
         }
 
         .nav-link {
@@ -55,12 +57,10 @@
             display: block;
             text-decoration: none;
             color: #ffffff;
-            transition: color 0.3s ease; /* Added transition */
             border-radius: 10px;
         }
 
         .nav-link:hover {
-            color: #800080; /* Change color on hover */
             background-color: rgba(255, 255, 255, 0.1);
         }
 
@@ -68,6 +68,20 @@
         .content {
             padding: 20px;
             text-align: center; /* Align content to center */
+        }
+
+        /* Icon styles */
+        .toggle-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #800080;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 999;
         }
     </style>
 </head>
@@ -77,7 +91,7 @@
         <div class="logo">Warner Bros</div>
     </header>
 
-    <nav>
+    <nav id="navMenu">
         <div class="nav-link">
             <a href="index.html">Home</a>
         </div>
@@ -100,20 +114,24 @@
 
     <div class="content">
         <!-- Content of the Home page -->
-        <h1>Welcome to Warner Bros</h1>
-        <p>This is the home page content.</p>
-        <p>Check out our <a href="movies.html">Movies</a>.</p>
+        <p>Welcome to Warner Bros</a>.</p>
     </div>
 
+    <!-- Icon to toggle navigation -->
+    <button class="toggle-icon" onclick="toggleNav()">
+        <i class="fas fa-bars fa-lg"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-Du6k9W0TQwnt63v7IeREIsUQOjvEZ3EBN9Vhjti9zSfuqdnuPz6Ee6TpR0fzx4xj" crossorigin="anonymous"></script>
     <script>
-        window.addEventListener('scroll', function() {
-            var header = document.getElementById('mainHeader');
-            if (window.scrollY > 50) {
-                header.style.backgroundColor = '#0F2027';
+        function toggleNav() {
+            var navMenu = document.getElementById('navMenu');
+            if (navMenu.style.transform === 'translateX(-250px)') {
+                navMenu.style.transform = 'translateX(0)';
             } else {
-                header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+                navMenu.style.transform = 'translateX(-250px)';
             }
-        });
+        }
     </script>
 </body>
 
