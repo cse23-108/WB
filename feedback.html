@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros - Feedback</title>
+    <style>
+        /* Resetting default margin and padding */
+        body, input, textarea {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        /* Global styles */
+        body {
+            background: black;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        /* Header styles */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 20px; /* Added margin */
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Content styles */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Review boxes styles */
+        .review-boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .review-box {
+            width: calc(33% - 10px);
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+
+        .review-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .review-text {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feedback</h1>
+    </header>
+
+    <div class="content">
+        <!-- Review boxes -->
+        <div class="review-boxes">
+            <div class="review-box">
+                <h2 class="review-title">Great Experience</h2>
+                <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, tortor sit amet volutpat fringilla, mi tellus ultricies enim.</p>
+            </div>
+            <div class="review-box">
+                <h2 class="review-title">Very Helpful Support</h2>
+                <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, tortor sit amet volutpat fringilla, mi tellus ultricies enim.</p>
+            </div>
+            <div class="review-box">
+                <h2 class="review-title">Excellent Service</h2>
+                <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, tortor sit amet volutpat fringilla, mi tellus ultricies enim.</p>
+            </div>
+        </div>
+
+        <!-- Feedback form -->
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+</body>
+</html>
