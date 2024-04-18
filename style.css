@@ -1,41 +1,40 @@
+/* Resetting default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
 
-    <style>
-        /* Resetting default margin and padding */
-        body, h1, p {
-            margin: 0;
-            padding: 0;
-        }
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font stack */
+    background: #1f1f1f; /* Darker background */
+    color: #ffffff;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif;
-            background: #000000; /* Changed to black */
-            color: #ffffff;
-            overflow-x: hidden; /* Hide horizontal scrollbar */
-        }
+/* Header styles */
+header {
+    background: rgba(0, 0, 0, 0.9); /* Increased opacity */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Added margin */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
 
-        /* Header styles */
-        header {
-            background: rgba(0, 0, 0, 0.8);
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            border-radius: 0 0 10px 10px;
-            margin-bottom: 20px; /* Added margin */
-        }
+.logo {
+    font-size: 36px; /* Slightly larger font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Increased letter spacing */
+}
 
-        .logo {
-            font-size: 32px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        /* Existing styles remain unchanged */
+/* Navigation styles */
 #navMenu {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 20px;
 }
 
@@ -50,33 +49,50 @@
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff; /* White color for links */
     font-weight: bold;
     padding: 10px;
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .nav-links a:hover {
-    color: #ff4500; /* Change color on hover if desired */
+    color: orange; /* Orange color on hover */
 }
 
+/* Content styles */
+.content {
+    padding: 30px;
+}
 
-        /* Content styles */
-        .content {
-            padding: 20px;
-            text-align: center; /* Align content to center */
-        }
+/* Movie styles */
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
 
-        /* Icon styles */
-        .toggle-icon {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background: #800080;
-            color: #ffffff;
-            border: none;
-            padding: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-            z-index: 999;
-        }
-    </style>
+.movie {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.movie img {
+    width: 100%; /* Make image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is centered within its container */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 10px;
+}
+
+.movie-title {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 30px;
+}
