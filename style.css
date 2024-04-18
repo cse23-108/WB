@@ -1,4 +1,5 @@
-<style>
+
+    <style>
         /* Resetting default margin and padding */
         body, h1, p {
             margin: 0;
@@ -8,7 +9,7 @@
         /* Global styles */
         body {
             font-family: Arial, sans-serif;
-            background: black; /* Changed to black */
+            background: #000000; /* Changed to black */
             color: #ffffff;
             overflow-x: hidden; /* Hide horizontal scrollbar */
         }
@@ -30,89 +31,50 @@
             letter-spacing: 2px;
         }
 
-        /* Content styles */
-        .content {
-            position: relative;
-            padding: 20px;
-            text-align: center;
+        /* Navigation styles */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            width: 250px;
+            position: fixed;
+            top: 70px;
+            bottom: 0;
+            overflow-y: auto;
+            border-radius: 0 10px 10px 0;
+            transition: transform 0.3s ease; /* Added transition */
+            transform: translateX(-250px); /* Hide navigation by default */
         }
 
-        /* Movie container styles */
-        .movie-container {
-            display: flex;
-            overflow-x: hidden;
-            gap: 20px;
-            padding-bottom: 20px;
-            margin-left: -20px;
-            margin-right: -20px;
-            width: 100%;
-            height: 300px; /* Fixed size */
-        }
-
-        /* Movie styles */
-        .movie {
-            flex: 0 0 auto; /* Prevent flex items from growing */
-            width: 200px;
-            height: 100%; /* Take full height of the container */
-            text-align: center;
-            transition: transform 0.6s ease, opacity 0.6s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            opacity: 0; /* Initially hidden */
-            animation: fadeIn 1s forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .movie img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .nav-link {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
             border-radius: 10px;
         }
 
-        .movie:hover {
-            transform: scale(1.05);
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
-        .movie-title {
-            margin-top: 10px;
-            font-weight: bold;
-            line-height: 1.2;
-            white-space: nowrap; /* Prevent line breaks */
-            overflow: hidden; /* Hide overflow */
-            text-overflow: ellipsis; /* Show ellipsis for overflow text */
+        /* Content styles */
+        .content {
+            padding: 20px;
+            text-align: center; /* Align content to center */
         }
 
-        /* Arrow styles */
-        .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
+        /* Icon styles */
+        .toggle-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #800080;
             color: #ffffff;
-            font-size: 24px;
+            border: none;
             padding: 10px;
             border-radius: 50%;
             cursor: pointer;
             z-index: 999;
-        }
-
-        .left-arrow {
-            left: 20px;
-        }
-
-        .right-arrow {
-            right: 20px;
         }
     </style>
