@@ -8,8 +8,8 @@ body, h1, p {
 /* Global styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font stack */
-    background: #1f1f1f; /* Darker background */
-    color: #ffffff;
+    background: #222; /* Darker background */
+    color: #fff;
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
@@ -19,23 +19,23 @@ header {
     color: #ffffff;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
-    margin-bottom: 20px; /* Added margin */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+    border-radius: 15px;
+    margin-bottom: 30px; /* Added margin */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 .logo {
-    font-size: 36px; /* Slightly larger font size */
+    font-size: 42px; /* Larger font size */
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 3px; /* Increased letter spacing */
+    letter-spacing: 4px; /* Increased letter spacing */
 }
 
 /* Navigation styles */
 #navMenu {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .nav-links {
@@ -51,48 +51,49 @@ header {
     text-decoration: none;
     color: #ffffff; /* White color for links */
     font-weight: bold;
-    padding: 10px;
+    padding: 15px;
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .nav-links a:hover {
-    color: orange; /* Orange color on hover */
+    color: #ff7f50; /* Coral color on hover */
 }
 
 /* Content styles */
 .content {
-    padding: 30px;
+    padding: 40px;
 }
 
 /* Movie styles */
 .movie-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
     justify-content: center;
 }
 
 .movie {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden; /* Hide overflow content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 .movie img {
     width: 100%; /* Make image fill the container */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure image is centered within its container */
-    border-top-left-radius: 30px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .movie-title {
-    padding: 15px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
+
