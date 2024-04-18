@@ -1,3 +1,4 @@
+
 /* Resetting default margin and padding */
 body, h1, p {
     margin: 0;
@@ -30,7 +31,6 @@ header {
     text-transform: uppercase;
     letter-spacing: 4px; /* Increased letter spacing */
 }
-
 /* Navigation styles */
 #navMenu {
     display: flex;
@@ -52,12 +52,14 @@ header {
     color: #ffffff; /* White color for links */
     font-weight: bold;
     padding: 15px;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease, transform 0.5s ease; /* Smooth color and transform transition */
 }
 
 .nav-links a:hover {
     color: #ff7f50; /* Coral color on hover */
+    transform: translateY(-5px); /* Move link up by 5 pixels */
 }
+
 
 /* Content styles */
 .content {
@@ -77,6 +79,10 @@ header {
     border-radius: 20px;
     overflow: hidden; /* Hide overflow content */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.movie:hover {
+    transform: scale(1.05); /* Scale up the image slightly on hover */
 }
 
 .movie img {
@@ -96,4 +102,3 @@ header {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
