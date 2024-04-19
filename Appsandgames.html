@@ -59,26 +59,9 @@
             </div>
             <!-- Add more app/game items as needed -->
         </div>
-        <div class="arrow left-arrow" onclick="scrollItems('left')">&#10094;</div>
-        <div class="arrow right-arrow" onclick="scrollItems('right')">&#10095;</div>
+        
     </div>
 
-    <script>
-        function scrollItems(direction) {
-            const itemContainer = document.getElementById('itemContainer');
-            const scrollAmount = 240; // Adjust as needed for item width + gap
-            if (direction === 'left') {
-                itemContainer.scrollBy({
-                    left: -scrollAmount,
-                    behavior: 'smooth'
-                });
-            } else if (direction === 'right') {
-                itemContainer.scrollBy({
-                    left: scrollAmount,
-                    behavior: 'smooth'
-                });
-            }
-        }
-    </script>
+   
 </body>
 </html>
