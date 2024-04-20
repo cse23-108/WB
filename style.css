@@ -9,7 +9,7 @@ body, h1, p {
 /* Global styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font stack */
-    background: #222; /* Darker background */
+    background-image: url('beekeeper.jpeg'); /* Darker background */
     color: #fff;
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
