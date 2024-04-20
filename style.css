@@ -8,11 +8,12 @@ body, h1, p {
 
 /* Global styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font stack */
-    background-image: url('beekeeper.jpeg'); /* Darker background */
-    color: #fff;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background-image: url('beekeeper.jpeg'); /* Replace 'background_image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 /* Header styles */
 header {
