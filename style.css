@@ -1,63 +1,69 @@
-/* Resetting default margin and padding */
-body, h1, p {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
-
 /* Global styles */
 body {
-    background-image: url('wallpaperflare.com_wallpaper.jpg'); /* Replace 'background_image.jpg' with the path to your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #000; /* Set background to black */
+    color: #fff; /* White text for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: relative; /* Positioning for overlay */
+    color: #ffffff;
+    padding: 20px 40px; /* Maintain padding for layout */
+    text-align: left;
 }
 
 .logo {
-    font-size: 30px; /* Larger font size */
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 8px; /* Increased letter spacing */
+    font-size: 28px;
+    font-weight: 700;
 }
 
-/* Navigation styles */
-#navMenu {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.nav-links {
-    list-style-type: none;
-    margin: 0;
+nav#navMenu ul {
     padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: center; /* Centering navigation */
+    list-style: none;
+    padding-top: 10px; /* Padding to separate from the top edge */
 }
 
-.nav-links a {
+nav#navMenu li {
+    padding: 10px 20px;
+}
+
+nav#navMenu a {
+    color: #ffffff;
     text-decoration: none;
-    color: #ffffff; /* White color for links */
-    font-weight: bold;
-    padding: 0 15px; /* Adjust spacing between links */
-    transition: color 0.3s ease, transform 0.5s ease; /* Smooth color and transform transition */
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: #ff7f50; /* Coral color on hover */
-    transform: translateY(-5px); /* Move link up by 5 pixels */
+nav#navMenu a:hover {
+    color: #ff4500; /* Bright orange for hover effect */
 }
 
-/* Content styles */
 .content {
-    padding: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.picture-container img {
+    max-width: 90%; /* Manageable size for responsiveness */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+.picture-container img:hover {
+    transform: scale(1.05); /* Subtle scale on hover */
 }
