@@ -1,4 +1,3 @@
-
 /* Resetting default margin and padding */
 body, h1, p {
     margin: 0;
@@ -14,45 +13,41 @@ body {
     background-repeat: no-repeat;
 }
 
-
 /* Header styles */
 header {
-    background: rgba(0, 0, 0, 0.9); /* Increased opacity */
-    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    text-align: center;
-    border-radius: 50px;
-    margin-bottom: 30px; /* Added margin */
-    box-shadow: 0 20px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    position: relative; /* Positioning for overlay */
 }
 
 .logo {
-    font-size: 42px; /* Larger font size */
+    font-size: 30px; /* Larger font size */
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 4px; /* Increased letter spacing */
+    letter-spacing: 8px; /* Increased letter spacing */
 }
+
 /* Navigation styles */
 #navMenu {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #ffffff; /* White color for links */
     font-weight: bold;
-    padding: 15px;
+    padding: 0 15px; /* Adjust spacing between links */
     transition: color 0.3s ease, transform 0.5s ease; /* Smooth color and transform transition */
 }
 
@@ -61,45 +56,7 @@ header {
     transform: translateY(-5px); /* Move link up by 5 pixels */
 }
 
-
 /* Content styles */
 .content {
     padding: 40px;
-}
-
-/* Movie styles */
-.movie-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    justify-content: center;
-}
-
-.movie {
-    width: 100%;
-    border-radius: 20px;
-    overflow: hidden; /* Hide overflow content */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-.movie:hover {
-    transform: scale(1.05); /* Scale up the image slightly on hover */
-}
-
-.movie img {
-    width: 100%; /* Make image fill the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure image is centered within its container */
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.movie-title {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
