@@ -7,10 +7,11 @@ body, h1, p {
 
 /* Global styles */
 body {
-    background-image: url('beekeeper.jpeg'); /* Replace 'background_image.jpg' with the path to your image */
+    background-image: url('purple.jpeg.jpg'); /* Replace 'background_image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Header styles */
