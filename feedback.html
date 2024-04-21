@@ -35,6 +35,35 @@
             letter-spacing: 2px;
         }
 
+        /* Navigation styles */
+        nav#navMenu {
+            background: black; /* Ensuring background is black */
+            text-align: center; /* Centering the navigation links */
+            padding: 10px 0; /* Top and bottom padding */
+        }
+
+        nav#navMenu ul {
+            list-style-type: none; /* Removing bullet points */
+            padding: 0; /* Removing default padding */
+            margin: 0; /* Removing default margin */
+        }
+
+        nav#navMenu li {
+            display: inline; /* Display links inline */
+            margin-right: 20px; /* Space between links */
+        }
+
+        nav#navMenu a {
+            color: white; /* White text for visibility */
+            text-decoration: none; /* No underline */
+            font-size: 16px; /* Adjust font size as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        nav#navMenu a:hover {
+            color: #d8d8d8; /* Lighter shade when hovered */
+        }
+
         /* Content styles */
         .content {
             max-width: 800px;
@@ -108,17 +137,17 @@
     <header>
         <h1>Feedback</h1>
     </header>
-     <nav id="navMenu">
-        <ul class="nav-links">
-            <li class="nav-link"><a href="index.html">Home</a></li>
-            <li class="nav-link"><a href="movies.html">Movies</a></li>
-            <li class="nav-link"><a href="tvshows.html">TV Shows</a></li>
-            <li class="nav-link"><a href="games.html">Games</a></li>
-            <li class="nav-link"><a href="feedback.html">Feedback</a></li>
-            <li class="nav-link"><a href="about.html">About Us</a></li>
+
+    <nav id="navMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="about.html">About Us</a></li>
         </ul>
     </nav>
-
 
     <div class="content">
         <!-- Review boxes -->
@@ -141,7 +170,7 @@
         <form action="#" method="post">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
-            <label for="email">Your Email:</label>
+          <label for="email">Your Email:</label>
             <input type="text" id="email" name="email" required>
             <label for="message">Your Feedback:</label>
             <textarea id="message" name="message" required></textarea>
