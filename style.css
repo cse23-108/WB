@@ -1,8 +1,7 @@
-/* Global styles */
 body {
-    background-color: #000; /* Set background to black */
-    color: #fff; /* White text for readability */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,8 +9,7 @@ body {
 
 header {
     color: #ffffff;
-    padding: 20px 40px; /* Maintain padding for layout */
-    text-align: left;
+    padding: 20px 40px;
 }
 
 .logo {
@@ -20,12 +18,11 @@ header {
 }
 
 nav#navMenu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center; /* Centering navigation */
-    list-style: none;
-    padding-top: 10px; /* Padding to separate from the top edge */
 }
 
 nav#navMenu li {
@@ -40,30 +37,30 @@ nav#navMenu a {
 }
 
 nav#navMenu a:hover {
-    color: #ff4500; /* Bright orange for hover effect */
+    color: #ff4500;
 }
 
 .content {
-    padding: 20px;
+    padding: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .picture-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* This enables the images to wrap onto the next line */
+    justify-content: center;
     gap: 20px;
 }
 
 .picture-container img {
-    max-width: 90%; /* Manageable size for responsiveness */
-    border-radius: 10px; /* Soft rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+    flex: 1 0 22%; /* Adjusts the width of each image */
+    max-width: 22%; /* Ensures that each image does not exceed 22% width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.3s ease-in-out;
 }
 
 .picture-container img:hover {
-    transform: scale(1.05); /* Subtle scale on hover */
+    transform: scale(1.05);
 }
