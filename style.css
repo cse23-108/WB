@@ -47,20 +47,17 @@ nav#navMenu a:hover {
 }
 
 .picture-container {
-    display: flex;
-    flex-wrap: wrap; /* This enables the images to wrap onto the next line */
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+    grid-gap: 10px; /* Space between images */
+    margin-bottom: 20px; /* Space below each container */
 }
 
 .picture-container img {
-    flex: 1 0 22%; /* Adjusts the width of each image */
-    max-width: 22%; /* Ensures that each image does not exceed 22% width */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Each image takes full width of its cell */
+    height: auto; /* Height adjusts to maintain aspect ratio */
+    display: block; /* Removes bottom space/margin under the image */
 }
-
 .picture-container img:hover {
     transform: scale(1.05);
 }
