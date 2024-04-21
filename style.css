@@ -55,9 +55,11 @@ nav#navMenu a:hover {
 
 .picture-container img {
     width: 100%; /* Each image takes full width of its cell */
-    height: auto; /* Height adjusts to maintain aspect ratio */
+    height: 150px; /* Fixed height for all images */
+    object-fit: cover; /* Covers the area without breaking aspect ratio */
     display: block; /* Removes bottom space/margin under the image */
 }
+
 .picture-container img:hover {
     transform: scale(1.05);
 }
