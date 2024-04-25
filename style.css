@@ -123,20 +123,25 @@ nav#navMenu a:hover {
 .game-item, .app-item {
     width: 200px;
     height: 300px;
-    overflow: hidden;
+    overflow: hidden; /* Keeps the image inside the boundaries of the container */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease; /* Smooth transition for the box-shadow */
+    cursor: pointer; /* Optional: Changes the cursor on hover to indicate interactivity */
 }
 
 .game-item img, .app-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease; /* Applies a smooth transition to the transform property */
+}
+
+.game-item:hover img, .app-item:hover img {
+    transform: scale(1.1); /* Scales up the image only, not the container */
 }
 
 .game-item:hover, .app-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow when hovered */
 }
 
