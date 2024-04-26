@@ -1,4 +1,4 @@
- body {
+body {
     background-color: #000;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,6 +6,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+#mainHeader {
+    background-color: black; /* Adjust to match your site's theme */
+    padding: 10px 20px; /* Adjust padding based on your design needs */
+    border-bottom: 5px solid grey; /* Optional border for a subtle separation */
+    border-radius: 50px; /* Apply rounded corners to all sides */
+}
+.nav-links, .logo {
+    padding: 0 10px; /* Add padding to ensure content does not touch the curved edges */
+}
+@media (max-width: 600px) {
+    #mainHeader {
+        border-radius: 10px; /* Smaller radius for smaller screens */
+    }
+}
+
 
 header {
     color: #ffffff;
@@ -33,12 +48,32 @@ nav#navMenu a {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    transition: color 0.3s;
+    transition: color 0.9s;
 }
 
 nav#navMenu a:hover {
     color: #ff4500;
+   transition: transform 0.5s ease;
+  
+}.nav-link a {
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+    color: #FFF; /* Adjust the color as needed */
+    text-decoration: none;
+    transition: transform 1.9s ease; /* Smooth transition for transform */
 }
+
+.nav-link i {
+    margin-right: 8px; /* Space between the icon and text */
+    color: inherit; /* Icons inherit the color of the text */
+}
+
+.nav-link a:hover {
+    transform: scale(1.1); /* Scales up the link by 10% */
+    text-decoration: none; /* Ensures no underline appears on hover */
+}
+
+
 
 .content {
     display: flex;
@@ -112,51 +147,47 @@ nav#navMenu a:hover {
         max-width: none; /* Allows text to fill the container on smaller screens */
     }
 }
-.games-section, .apps-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 10px;
-}
-
-.game-item, .app-item {
-    width: 200px;
-    height: 300px;
-    overflow: hidden; /* Keeps the image inside the boundaries of the container */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease; /* Smooth transition for the box-shadow */
-    cursor: pointer; /* Optional: Changes the cursor on hover to indicate interactivity */
-}
-
-.game-item img, .app-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease; /* Applies a smooth transition to the transform property */
-}
-
-.game-item:hover img, .app-item:hover img {
-    transform: scale(1.1); /* Scales up the image only, not the container */
-}
-
-.game-item:hover, .app-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow when hovered */
-}
-.site-footer {
-    padding: 20px 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+/* Add or update this in your existing CSS file */
+.hero {
+    position: relative;
+    background-image: url('https://wallpaperaccess.com/full/37963.jpg'); /* Your hero image */
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
+    padding: 100px 20px; /* Adjust padding as needed */
 }
 
-.footer-content h3 {
-    margin: 0 0 10px 0;
-    font-weight: normal;
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #000 100%); /* Gradient fades into black */
+}
+
+.content {
+    background-color: black; /* This should be the same as the end color of the gradient */
+    padding: 20px;
+}
+
+.site-footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .social-links {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -164,14 +195,51 @@ nav#navMenu a:hover {
 }
 
 .social-icon {
-    display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px;
+    color: #fff; /* White color for the icons */
+    font-size: 20px; /* Adjust size as needed */
+    transition: color 0.3s;
 }
 
-.social-icon img {
-    width: 30px; /* Adjust the size of the social media icons as needed */
-    height: auto;
-    filter: brightness(0) invert(1); /* This makes the icons white, adjust if your icons are already light-colored */
+.social-icon:hover {
+    color: #4CAF50; /* Change color on hover */
+    text-decoration: none; /* No underline */
 }
 
+.search-form {
+    max-width: 80%; /* Extending the width relative to its container */
+    width: 100%; /* Use full width up to the max-width */
+    margin: 20px auto; /* Centering the form */
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 30px; /* Enhanced rounded corners */
+    overflow: hidden;
+}
 
+.search-input {
+    flex-grow: 1; /* Allows the input to expand to fill available space */
+    padding: 12px 24px; /* Comfortable padding */
+    font-size: 18px; /* Slightly larger font for better readability */
+    border: none;
+    outline: none;
+    color: #333;
+    background: transparent; /* Ensures the input field doesn't stand out from the form */
+}
+
+.search-button {
+    padding: 12px 24px;
+    background: #444; /* Slightly darker button for contrast */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.search-button i {
+    font-size: 20px; /* Ensuring the icon is adequately visible */
+}
+
+.search-button:hover {
+    background-color: #666; /* Darker shade on hover for visual feedback */
+}
