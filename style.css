@@ -144,4 +144,34 @@ nav#navMenu a:hover {
 .game-item:hover, .app-item:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow when hovered */
 }
+.site-footer {
+    padding: 20px 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    color: white;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin: 0 0 10px 0;
+    font-weight: normal;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 30px; /* Adjust the size of the social media icons as needed */
+    height: auto;
+    filter: brightness(0) invert(1); /* This makes the icons white, adjust if your icons are already light-colored */
+}
+
 
