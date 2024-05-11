@@ -105,7 +105,7 @@ nav#navMenu a:hover {
 /* Hero section styling */
 .hero {
     height: 100vh; /* Full viewport height */
-    background-image: url('https://wallpaperaccess.com/full/37963.jpg'); /* Update with your actual image path */
+    background-image: url('heroimage.jpeg'); /* Update with your actual image path */
     background-size: cover;
     background-position: center;
     position: relative;
