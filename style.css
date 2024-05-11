@@ -9,7 +9,7 @@ body {
 #mainHeader {
     background-color: black; /* Adjust to match your site's theme */
     padding: 10px 20px; /* Adjust padding based on your design needs */
-    border-bottom: 5px solid grey; /* Optional border for a subtle separation */
+    border-bottom: 5px black; /* Optional border for a subtle separation */
     border-radius: 50px; /* Apply rounded corners to all sides */
 }
 .nav-links, .logo {
