@@ -6,25 +6,17 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Customize the header */
 #mainHeader {
     background-color: black; /* Adjust to match your site's theme */
     padding: 10px 20px; /* Adjust padding based on your design needs */
-    border-bottom: 5px black; /* Optional border for a subtle separation */
-    border-radius: 50px; /* Apply rounded corners to all sides */
+    border-radius: 10px;
 }
-.nav-links, .logo {
-    padding: 0 10px; /* Add padding to ensure content does not touch the curved edges */
-}
-@media (max-width: 600px) {
-    #mainHeader {
-        border-radius: 10px; /* Smaller radius for smaller screens */
-    }
-}
-
 
 header {
     color: #ffffff;
-    padding: 20px 40px;
+    padding: 20px 0;
 }
 
 .logo {
@@ -32,246 +24,86 @@ header {
     font-weight: 700;
 }
 
-nav#navMenu ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav#navMenu li {
-    padding: 10px 20px;
-}
-
-nav#navMenu a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.9s;
-}
-
-nav#navMenu a:hover {
-    color: #ff4500;
-   transition: transform 0.5s ease;
-  
-}.nav-link a {
-    display: flex;
-    align-items: center; /* Aligns the icon and text vertically */
+/* Customize nav links */
+.nav-link a {
     color: #FFF; /* Adjust the color as needed */
     text-decoration: none;
-    transition: transform 1.9s ease; /* Smooth transition for transform */
-}
-
-.nav-link i {
-    margin-right: 8px; /* Space between the icon and text */
-    color: inherit; /* Icons inherit the color of the text */
+    transition: color 0.3s ease;
 }
 
 .nav-link a:hover {
-    transform: scale(1.1); /* Scales up the link by 10% */
-    text-decoration: none; /* Ensures no underline appears on hover */
+    color: #ddd; /* Adjust hover color as needed */
 }
 
-
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 50px;
-}
-
-.movie {
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.movie img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.movie:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-/* Hero section styling */
+/* Customize the hero section */
 .hero {
-    height: 100vh; /* Full viewport height */
-    background-image: url('heroimage.jpeg'); /* Update with your actual image path */
     background-size: cover;
     background-position: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-content {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 4rem; /* Responsive padding */
+    min-height: 300px;
+    padding: 60px 20px;
 }
 
 .hero-content h1 {
-    font-size: 48px; /* Larger font size for main title */
-    margin-bottom: 0.5em;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .hero-content p {
-    font-size: 24px; /* Larger text for visibility */
-    max-width: 450px; /* Ensures text is not too wide */
-}
-
-@media (max-width: 768px) {
-    .hero-content {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 60%, transparent 100%);
-        align-items: center;
-        text-align: center;
-    }
-    .hero-content h1,
-    .hero-content p {
-        max-width: none; /* Allows text to fill the container on smaller screens */
-    }
-}
-/* Add or update this in your existing CSS file */
-.hero {
-    position: relative;
-    background-image: url('https://wallpaperaccess.com/full/37963.jpg'); /* Your hero image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    padding: 100px 20px; /* Adjust padding as needed */
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #000 100%); /* Gradient fades into black */
-}
-/* Add or update this in your existing CSS file */
-.games-section,
-.apps-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 30px;
-}
-
-.game-item,
-.app-item {
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.game-item img,
-.app-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.game-item:hover,
-.app-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.content {
-    background-color: black; /* This should be the same as the end color of the gradient */
-    padding: 20px;
-}
-
-.site-footer {
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.footer-content {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.social-links {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-.social-icon {
-    margin: 0 20px;
-    color: #fff; /* White color for the icons */
-    font-size: 20px; /* Adjust size as needed */
-    transition: color 0.3s;
-}
-
-.social-icon:hover {
-    color: #4CAF50; /* Change color on hover */
-    text-decoration: none; /* No underline */
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .search-form {
-    max-width: 80%; /* Extending the width relative to its container */
-    width: 100%; /* Use full width up to the max-width */
-    margin: 20px auto; /* Centering the form */
     display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    border-radius: 30px; /* Enhanced rounded corners */
-    overflow: hidden;
+    justify-content: center;
 }
 
 .search-input {
-    flex-grow: 1; /* Allows the input to expand to fill available space */
-    padding: 12px 24px; /* Comfortable padding */
-    font-size: 18px; /* Slightly larger font for better readability */
+    width: 80%;
+    padding: 10px;
     border: none;
-    outline: none;
-    color: #333;
-    background: transparent; /* Ensures the input field doesn't stand out from the form */
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
 .search-button {
-    padding: 12px 24px;
-    background: #444; /* Slightly darker button for contrast */
-    color: #fff;
+    padding: 10px;
     border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.search-button i {
-    font-size: 20px; /* Ensuring the icon is adequately visible */
+/* Customize footer */
+.site-footer {
+    padding: 20px 0;
+    background-color: black;
+    border-top: 2px solid #333;
 }
 
-.search-button:hover {
-    background-color: #666; /* Darker shade on hover for visual feedback */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
+
+.social-links a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ddd;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
