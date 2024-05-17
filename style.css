@@ -54,6 +54,13 @@ header {
     font-weight: 300;
     margin-bottom: 20px;
 }
+.img-fluid {
+    height: 300px; /* Adjust the height as needed */
+    width: auto;
+    max-width: 100%;
+    border-radius: 40px; /* Add border radius for rounded corners */
+}
+
 
 .search-form {
     display: flex;
