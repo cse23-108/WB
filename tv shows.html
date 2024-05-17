@@ -2,54 +2,111 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warner Bros</title>
+    <title>Warner Bros - TV Shows</title>
 </head>
 <body>
-    <header id="mainHeader">
-        <div class="logo">Warner Bros</div>
+    <header id="mainHeader" class="container-fluid py-3 bg-dark text-white">
+        <div class="container">
+            <div class="logo">Warner Bros</div>
+        </div>
     </header>
 
-    <nav id="navMenu">
-        <ul class="nav-links">
-            <li class="nav-link"><a href="index.html">Home</a></li>
-            <li class="nav-link"><a href="movies.html">Movies</a></li>
-            <li class="nav-link"><a href="tv shows.html">TV Shows</a></li>
-            <li class="nav-link"><a href="Appsandgames.html">Games</a></li>
-            <li class="nav-link"><a href="feedback.html">Feedback</a></li>
-            <li class="nav-link"><a href="collection.html">Collection</a></li>
-            <li class="nav-link"><a href="about.html">About Us</a></li>
-        </ul>
+    <nav id="navMenu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tv shows.html">TV Shows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Appsandgames.html">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-   <section>
-        <h3>Sit back and binge watch ... </h3>
-        <div class="games-section">
-        <div class="movie"><img src="theoffice.jpg"></div>
-        <div class="movie"> <img src="bang.jpeg"></div>
-        <div class="movie"> <img src="flash.jpeg"></div>
-        <div class="movie"><img src="modern.jpeg"></div>
-        <div class="movie"><img src="orange.jpg"></div>
-        <div class="movie"><img src="sheldon.jpeg"></div>
-        
+    <section class="container my-5">
+        <h3>Sit back and binge watch ...</h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="theoffice.jpg" class="img-fluid rounded">
+                </div>
             </div>
-   </section>
-    
-   <section>
-        <h3>Animated tv shows</h3>
-        <div class="games-section">
-              <div class="movie"><img src="adv.jpeg"></div>
-              <div class="movie"><img src="american.jpeg"></div>
-              <div class="movie"><img src="brick.jpeg"></div>
-              <div class="movie"><img src="morty.jpeg"></div>
-              <div class="movie"><img src="regular.jpeg"></div>
-              <div class="movie"><img src="paw.jpg"></div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="bang.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="flash.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="modern.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="orange.jpg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="sheldon.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
         </div>
-   </section>
-     
-        
-    
-  
+    </section>
+
+    <section class="container my-5">
+        <h3>Animated TV Shows</h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="adv.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="american.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="brick.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="morty.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="regular.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie">
+                    <img src="paw.jpg" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
