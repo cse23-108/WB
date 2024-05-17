@@ -2,103 +2,97 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-   
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Warner Bros</title>
 </head>
 <body>
-    <header id="mainHeader">
-        <div class="logo">Warner Bros</div>
-    
-
-    <nav id="navMenu">
-        <ul class="nav-links">
-            <li class="nav-link"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-        <li class="nav-link"><a href="movies.html"><i class="fa fa-film"></i> Movies</a></li>
-        <li class="nav-link"><a href="tv shows.html"><i class="fa fa-tv"></i> TV Shows</a></li>
-        <li class="nav-link"><a href="Appsandgames.html"><i class="fa fa-gamepad"></i> Games</a></li>
-        <li class="nav-link"><a href="feedback.html"><i class="fa fa-comments"></i> Feedback</a></li>
-        <li class="nav-link"><a href="collection.html"><i class="fa fa-th"></i> Collections</a></li>
-        <li class="nav-link"><a href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
-        </ul>
-    </nav>
-      </header>
+    <header id="mainHeader" class="container-fluid py-3 bg-dark text-white">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">Warner Bros</div>
+            <nav id="navMenu" class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="movies.html"><i class="fa fa-film"></i> Movies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tv shows.html"><i class="fa fa-tv"></i> TV Shows</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Appsandgames.html"><i class="fa fa-gamepad"></i> Games</a></li>
+                        <li class="nav-item"><a class="nav-link" href="feedback.html"><i class="fa fa-comments"></i> Feedback</a></li>
+                        <li class="nav-item"><a class="nav-link" href="collection.html"><i class="fa fa-th"></i> Collections</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
   
-<div class="hero">
-    <div class="hero-content">
-        <h1>Welcome to the Best Site</h1>
-        <p>Explore all your favorites in movies, TV shows, games, and more!</p>
-       <form action="/search" method="get" class="search-form">
-            <input type="text" name="search" placeholder="Search here..." class="search-input">
-            <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
-        </form>
+    <div class="hero d-flex align-items-center" style="background-image: url('https://wallpaperaccess.com/full/37963.jpg');">
+        <div class="container text-center text-white">
+            <h1>Welcome to the Best Site</h1>
+            <p>Explore all your favorites in movies, TV shows, games, and more!</p>
+            <form action="/search" method="get" class="search-form form-inline justify-content-center">
+                <input type="text" name="search" placeholder="Search here..." class="search-input form-control mr-2">
+                <button type="submit" class="search-button btn btn-dark"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
     </div>
-</div>
-<section>
+
+    <section class="container my-5">
         <h2>Top 5</h2>
-        <div class="games-section">
-            <div class="movie">
-                <a href="dune.html"> 
-                    <img src="dune.jpeg"><!-- Link to the description page -->
-                    
-                </a>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="dune.html"><img src="dune.jpeg" class="img-fluid rounded"></a>
             </div>
-        
-        <div class="movie"><img src="portal.jpeg"></div>
-        <div class="movie"><img src="loandbehold.jpeg"></div>
-        <div class="movie"> <img src="titanic.jpeg"></div>
-        <div class="movie"><img src="avatar.jpeg"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="portal.jpeg" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="loandbehold.jpeg" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="titanic.jpeg" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="avatar.jpeg" class="img-fluid rounded"></div>
         </div>
     </section>
-        <section>
+
+    <section class="container my-5">
         <h2>Talk of the week</h2>
-        <div class="games-section">
-            <div class="movie">
-                <a href="sarmien.html"> 
-                    <img src="sarmien.jpeg"><!-- Link to the description page -->
-                    
-                </a>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="sarmien.html"><img src="sarmien.jpeg" class="img-fluid rounded"></a>
             </div>
-        
-       
-        <div class="movie"><img src="annette.jpg"></div>
-        <div class="movie"><img src="haunted.jpeg"></div>
-        <div class="movie"><img src="bad.jpg"></div>
-        <div class="movie"> <img src="blackadam.webp"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="annette.jpg" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="haunted.jpeg" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="bad.jpg" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="blackadam.webp" class="img-fluid rounded"></div>
         </div>
-            </section>
-    
-          <section>
+    </section>
+
+    <section class="container my-5">
         <h2>Coming soon</h2>
-        <div class="games-section"> 
-        <div class="movie"><img src="batman.jpeg"></div>
-        <div class="movie"><img src="https://th.bing.com/th/id/OIP.eo0V6FcQhU5iJu1qMkYorQHaLH?rs=1&pid=ImgDetMain"></div>
-        <div class="movie"> <img src="https://th.bing.com/th/id/OIP.eo0V6FcQhU5iJu1qMkYorQHaLH?rs=1&pid=ImgDetMain"></div>
-        <div class="movie"><img src="https://th.bing.com/th/id/OIP.eo0V6FcQhU5iJu1qMkYorQHaLH?rs=1&pid=ImgDetMain"></div>
-         <div class="movie"><img src="https://th.bing.com/th/id/OIP.eo0V6FcQhU5iJu1qMkYorQHaLH?rs=1&pid=ImgDetMain"></div>
-          
-          
-    </div>
-         </section>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4"><img src="batman.jpeg" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="https://th.bing.com/th/id/OIP.eo0V6FcQhU5iJu1qMkYorQHaLH?rs=1&pid=ImgDetMain" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="https://th.bing.com/th/id/OIP.eo0V6FcQhU5iJu1qMkYorQHaLH?rs=1&pid=ImgDetMain" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="https://th.bing.com/th/id/OIP.eo0V6FcQhU5iJu1qMkYorQHaLH?rs=1&pid=ImgDetMain" class="img-fluid rounded"></div>
+            <div class="col-md-3 col-sm-6 mb-4"><img src="https://th.bing.com/th/id/OIP.eo0V6FcQhU5iJu1qMkYorQHaLH?rs=1&pid=ImgDetMain" class="img-fluid rounded"></div>
+        </div>
+    </section>
+
+    <footer class="site-footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <h3>Follow Us</h3>
+            <div class="social-links d-flex justify-content-center mb-3">
+                <a href="https://www.facebook.com/yourfacebookprofile" class="social-icon mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/yourtwitterhandle" class="social-icon mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/yourinstagramhandle" class="social-icon mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yourlinkedinprofile" class="social-icon mx-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-text mb-0">Website by Mr. CARL MAKUANE</p>
+            <p class="footer-text mb-0">© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
-           <footer class="site-footer">
-    <div class="footer-content">
-        <h3>Follow Us</h3>
-        <div class="social-links">
-            <a href="https://www.facebook.com/yourfacebookprofile" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com/yourtwitterhandle" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/yourinstagramhandle" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/yourlinkedinprofile" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      <p class="footer-text">Website by Mr. CARL MAKUANE</p>
-        <p class="footer-text">© 2024 All rights reserved.</p>
-    </div>
-
-        </div>
-    </div>
-</footer>
-
 </html>
