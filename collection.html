@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warner Bros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="mainHeader">
-        <div class="logo">collection board</div>
+    <header id="mainHeader" class="container-fluid py-3 bg-dark text-white">
+        <div class="container">
+            <div class="logo">collection board</div>
+        </div>
     </header>
 
-    <nav id="navMenu">
-        <ul class="nav-links">
-            <li class="nav-link"><a href="index.html">Home</a></li>
-            <li class="nav-link"><a href="movies.html">Movies</a></li>
-            <li class="nav-link"><a href="tv shows.html">TV Shows</a></li>
-            <li class="nav-link"><a href="Appsandgames.html">Games</a></li>
-            <li class="nav-link"><a href="feedback.html">Feedback</a></li>
-            <li class="nav-link"><a href="collection.html">Collection</a></li>
-            <li class="nav-link"><a href="about.html">About Us</a></li>
-        </ul>
+    <nav id="navMenu" class="container-fluid py-2 bg-dark text-white">
+        <div class="container">
+            <ul class="nav-links d-flex justify-content-center">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="movies.html">Movies</a></li>
+                <li class="nav-link"><a href="tv shows.html">TV Shows</a></li>
+                <li class="nav-link"><a href="Appsandgames.html">Games</a></li>
+                <li class="nav-link"><a href="feedback.html">Feedback</a></li>
+                <li class="nav-link"><a href="collection.html">Collection</a></li>
+                <li class="nav-link"><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="content">
-        <div class="movie"><img src="bad.jpg"></div>
-        <div class="movie"> <img src="blackadam.webp"></div>
-        <div class="movie"> <img src="annette.jpg"></div>
-        <div class="movie"><img src="godzilla.jpeg"></div>
-        <div class="movie"><img src="haunted.jpeg"></div>
-        <div class="movie"><img src="sarmien.jpeg"></div>
-        <div class="movie"><img src="dune.jpeg"></div>
-        <div class="movie"><img src="portal.jpeg"></div>
-        <div class="movie"><img src="loandbehold.jpeg"></div>
-        <div class="movie"> <img src="titanic.jpeg"></div>
-        <div class="movie"><img src="avatar.jpeg"></div>
-        <div class="movie"><img src="tron.jpeg"></div>
-        <div class="movie"> <img src="sneakerheads.jpeg"></div>
-        <div class="movie"><img src="vice.jpeg"></div>
-        
-    
-    
+    <div class="container my-5">
+        <h2>Collection</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie"><img src="bad.jpg" class="img-fluid rounded"></div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie"><img src="blackadam.webp" class="img-fluid rounded"></div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie"><img src="annette.jpg" class="img-fluid rounded"></div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="movie"><img src="godzilla.jpeg" class="img-fluid rounded"></div>
+            </div>
+            <!-- Add more columns with movies -->
+        </div>
     </div>
+
+    <footer class="site-footer bg-dark text-white text-center py-3">
+       <div class="container">
+            <h3>Follow Us</h3>
+            <div class="social-links d-flex justify-content-center mb-3">
+                <a href="https://www.facebook.com/yourfacebookprofile" class="social-icon mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/yourtwitterhandle" class="social-icon mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/yourinstagramhandle" class="social-icon mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yourlinkedinprofile" class="social-icon mx-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-text mb-0">Website by Mr. CARL MAKUANE</p>
+            <p class="footer-text mb-0">© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
