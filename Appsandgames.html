@@ -2,52 +2,113 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warner Bros</title>
+    <title>Warner Bros - Apps and Games</title>
 </head>
 <body>
-    <header id="mainHeader">
-        <div class="logo">Warner Bros</div>
+    <header id="mainHeader" class="container-fluid py-3 bg-dark text-white">
+        <div class="container">
+            <div class="logo">Warner Bros</div>
+        </div>
     </header>
 
-    <nav id="navMenu">
-        <ul class="nav-links">
-            <li class="nav-link"><a href="index.html">Home</a></li>
-            <li class="nav-link"><a href="movies.html">Movies</a></li>
-            <li class="nav-link"><a href="tv shows.html">TV Shows</a></li>
-            <li class="nav-link"><a href="Appsandgames.html">Games</a></li>
-            <li class="nav-link"><a href="feedback.html">Feedback</a></li>
-            <li class="nav-link"><a href="collection.html">Collection</a></li>
-            <li class="nav-link"><a href="about.html">About Us</a></li>
-        </ul>
+    <nav id="navMenu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tv shows.html">TV Shows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Appsandgames.html">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Featured Games Section -->
-    <section>
+    <section class="container my-5">
         <h3>Featured Games</h3>
-        <div class="games-section">
-            <div class="game-item"><img src="minecraft.png" alt="Minecraft"></div>
-            <div class="game-item"><img src="fornite.jpg" alt="Fortnite"></div>
-            <div class="game-item"><img src="fifa.jpg" alt="fifa"></div>
-            <div class="game-item"><img src="life.jpg" alt="Life is Strange"></div>
-            <div class="game-item"><img src="need.jpg" alt="Need for Speed"></div>
-            <div class="game-item"><img src="cod.jpg" alt="Call of Duty"></div>
-            
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="game-item">
+                    <img src="minecraft.png" alt="Minecraft" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="game-item">
+                    <img src="fornite.jpg" alt="Fortnite" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="game-item">
+                    <img src="fifa.jpg" alt="fifa" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="game-item">
+                    <img src="life.jpg" alt="Life is Strange" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="game-item">
+                    <img src="need.jpg" alt="Need for Speed" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="game-item">
+                    <img src="cod.jpg" alt="Call of Duty" class="img-fluid rounded">
+                </div>
+            </div>
         </div>
     </section>
- 
+
     <!-- Featured Apps Section -->
-    <section>
+    <section class="container my-5">
         <h3>Featured Apps</h3>
-        <div class="apps-section">
-            <div class="app-item"><img src="loandbehold.jpeg" alt="Lo and Behold"></div>
-            <div class="app-item"><img src="titanic.jpeg" alt="Titanic"></div>
-            <div class="app-item"><img src="avatar.jpeg" alt="Avatar"></div>
-            <div class="app-item"><img src="tron.jpeg" alt="Tron"></div>
-            <div class="app-item"><img src="sneakerheads.jpeg" alt="Sneakerheads"></div>
-            <div class="app-item"><img src="vice.jpeg" alt="Vice"></div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="app-item">
+                    <img src="loandbehold.jpeg" alt="Lo and Behold" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="app-item">
+                    <img src="titanic.jpeg" alt="Titanic" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="app-item">
+                    <img src="avatar.jpeg" alt="Avatar" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="app-item">
+                    <img src="tron.jpeg" alt="Tron" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="app-item">
+                    <img src="sneakerheads.jpeg" alt="Sneakerheads" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="app-item">
+                    <img src="vice.jpeg" alt="Vice" class="img-fluid rounded">
+                </div>
+            </div>
         </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
