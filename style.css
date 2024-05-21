@@ -138,3 +138,42 @@ header {
     font-size: 14px;
     color: #ccc;
 }
+body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-mode .navbar, .dark-mode .site-footer {
+            background-color: #333333;
+        }
+        .dark-mode .search-button {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .dark-mode .btn-dark {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .dark-mode .img-fluid {
+            filter: brightness(0.8);
+        }
+        .dark-mode .hero {
+            background-blend-mode: overlay;
+        }
+        .dark-mode .social-icon {
+            color: #ffffff;
+        }
+        .toggle-dark-mode {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .toggle-dark-mode.dark {
+            background-color: #333333;
+            color: #ffffff;
+        }
