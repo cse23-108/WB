@@ -85,6 +85,12 @@ header {
     border-radius: 10px;
     object-fit: cover;
 }
+.img-fluid {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.img-fluid:hover {
+    transform: scale(1.1);
+}
 
 /* Search form customization */
 .search-form {
