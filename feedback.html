@@ -178,5 +178,25 @@
             <input type="submit" value="Submit Feedback">
         </form>
     </div>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the feedback form element
+            const form = document.querySelector('form');
+
+            // Add submit event listener to the form
+            form.addEventListener('submit', function (event) {
+                // Prevent the default form submission behavior
+                event.preventDefault();
+
+                // Display a "Thank you" message
+                const thankYouMessage = document.createElement('p');
+                thankYouMessage.textContent = 'Thank you for your feedback!';
+                form.parentNode.appendChild(thankYouMessage);
+
+                // Reset the form
+                form.reset();
+            });
+        });
+    </script>
 </body>
 </html>
